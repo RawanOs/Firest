@@ -9,11 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: 10) {
+            Image("Image")
+                .resizable()
+                .frame(width: 200 , height: 200)
+                .ignoresSafeArea()
+            
+            Text("Hello, Im Rawan")
+                .foregroundColor(.black)
+            Text("I graduted from taif university")
+            Text(" with a major in a CS 2021 ")
+            Text("")
         }
         .padding()
     }
